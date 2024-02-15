@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>StayCozy - Find Your Perfect Hotel</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div class="scroll-button">
+    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#">StayCozy</a></div>
+      <ul class="menu">
+        <li><a href="#stays">Stays</a></li>
+        <li><a href="#flights">Flights</a></li>
+        <li><a href="#attractions">Attractions</a></li>
+        <div class="cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+      </ul>
+    </div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <div class="text">
+        <div class="text-one">Welcome to StayCozy</div>
+        <div class="text-two">Discover Your Cozy Retreat</div>
+        <div class="text-three">Find the perfect stay for your next adventure.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stays Section -->
+<section class="stays" id="stays">
+  <div class="content">
+    <div class="title"><span>Search for Stays</span></div>
+    <div class="search-box">
+      <form>
+        <div class="input-group">
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location" list="locations" placeholder="Type or select a location">
+          <datalist id="locations">
+            <option value="Bangkok">Bangkok</option>
+            <option value="Phuket">Phuket</option>
+            <option value="Chiang Mai">Chiang Mai</option>
+            <option value="Krabi">Krabi</option>
+            <option value="Pattaya">Pattaya</option>
+            <option value="Ayutthaya">Ayutthaya</option>
+            <option value="Amnat Charoen">Amnat Charoen</option>
+            <option value="Ang Thong">Ang Thong</option>
+            <option value="Bueng Kan">Bueng Kan</option>
+            <option value="Buriram">Buriram</option>
+            <option value="Chachoengsao">Chachoengsao</option>
+            <option value="Chai Nat">Chai Nat</option>
+            <option value="Chaiyaphum">Chaiyaphum</option>
+            <option value="Chanthaburi">Chanthaburi</option>
+            <option value="Chiang Rai">Chiang Rai</option>
+            <option value="Chonburi">Chonburi</option>
+            <option value="Chumphon">Chumphon</option>
+            <option value="Kalasin">Kalasin</option>
+            <option value="Kamphaeng Phet">Kamphaeng Phet</option>
+            <option value="Kanchanaburi">Kanchanaburi</option>
+            <option value="Khon Kaen">Khon Kaen</option>
+            <option value="Krabi">Krabi</option>
+            <option value="Lampang">Lampang</option>
+            <option value="Lamphun">Lamphun</option>
+            <option value="Loei">Loei</option>
+            <option value="Lopburi">Lopburi</option>
+            <option value="Mae Hong Son">Mae Hong Son</option>
+            <option value="Maha Sarakham">Maha Sarakham</option>
+            <option value="Mukdahan">Mukdahan</option>
+            <option value="Nakhon Nayok">Nakhon Nayok</option>
+            <option value="Nakhon Pathom">Nakhon Pathom</option>
+            <option value="Nakhon Phanom">Nakhon Phanom</option>
+            <option value="Nakhon Ratchasima">Nakhon Ratchasima</option>
+            <option value="Nakhon Sawan">Nakhon Sawan</option>
+            <option value="Nakhon Si Thammarat">Nakhon Si Thammarat</option>
+            <option value="Nan">Nan</option>
+            <option value="Narathiwat">Narathiwat</option>
+            <option value="Nong Bua Lamphu">Nong Bua Lamphu</option>
+            <option value="Nong Khai">Nong Khai</option>
+            <option value="Nonthaburi">Nonthaburi</option>
+            <option value="Pathum Thani">Pathum Thani</option>
+            <option value="Pattani">Pattani</option>
+            <option value="Phang Nga">Phang Nga</option>
+            <option value="Phatthalung">Phatthalung</option>
+            <option value="Phayao">Phayao</option>
+            <option value="Phetchabun">Phetchabun</option>
+            <option value="Phetchaburi">Phetchaburi</option>
+            <option value="Phichit">Phichit</option>
+            <option value="Phitsanulok">Phitsanulok</option>
+            <option value="Phra Nakhon Si Ayutthaya">Phra Nakhon Si Ayutthaya</option>
+            <option value="Phrae">Phrae</option>
+            <option value="Phuket">Phuket</option>
+            <option value="Prachinburi">Prachinburi</option>
+            <option value="Prachuap Khiri Khan">Prachuap Khiri Khan</option>
+            <option value="Ranong">Ranong</option>
+            <option value="Ratchaburi">Ratchaburi</option>
+            <option value="Rayong">Rayong</option>
+            <option value="Roi Et">Roi Et</option>
+            <option value="Sa Kaeo">Sa Kaeo</option>
+            <option value="Sakon Nakhon">Sakon Nakhon</option>
+            <option value="Samut Prakan">Samut Prakan</option>
+            <option value="Samut Sakhon">Samut Sakhon</option>
+            <option value="Samut Songkhram">Samut Songkhram</option>
+            <option value="Saraburi">Saraburi</option>
+            <option value="Satun">Satun</option>
+            <option value="Sing Buri">Sing Buri</option>
+            <option value="Sisaket">Sisaket</option>
+            <option value="Songkhla">Songkhla</option>
+            <option value="Sukhothai">Sukhothai</option>
+            <option value="Suphan Buri">Suphan Buri</option>
+            <option value="Surat Thani">Surat Thani</option>
+            <option value="Surin">Surin</option>
+            <option value="Tak">Tak</option>
+            <option value="Trang">Trang</option>
+            <option value="Trat">Trat</option>
+            <option value="Ubon Ratchathani">Ubon Ratchathani</option>
+            <option value="Udon Thani">Udon Thani</option>
+            <option value="Uthai Thani">Uthai Thani</option>
+            <option value="Uttaradit">Uttaradit</option>
+            <option value="Yala">Yala</option>
+            <option value="Yasothon">Yasothon</option>
+          </datalist>
+        </div>
+
+        <div class="input-group">
+          <label for="rooms">Rooms:</label>
+          <select id="rooms" name="rooms">
+            <option value="1">1 Room</option>
+            <option value="2">2 Rooms</option>
+            <option value="3">3 Rooms</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="adults">Adults:</label>
+          <select id="adults" name="adults">
+            <option value="1">1 Adult</option>
+            <option value="2">2 Adults</option>
+            <option value="3">3 Adults</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="children">Children:</label>
+          <select id="children" name="children">
+            <option value="0">0 Children</option>
+            <option value="1">1 Child</option>
+            <option value="2">2 Children</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="check-in">Check-In:</label>
+          <input type="date" id="check-in" name="check-in">
+        </div>
+        <div class="input-group">
+          <label for="check-out">Check-Out:</label>
+          <input type="date" id="check-out" name="check-out">
+        </div>
+        <div class="input-group">
+          <button type="submit" class="button">Search</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Flights Section -->
+  <section class="flights" id="flights">
+    <div class="background" style="background-image: url('https://images.unsplash.com/photo-1588880251472-6255f2851840?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+      <div class="content">
+        <div class="title"><span>Explore Flights</span></div>
+        
+        <!-- Flights Information Box -->
+        <div class="flight-info-box">
+          <h2>Book Your Flight</h2>
+          <p>Find the best deals on flights for your next adventure. Fly with comfort and style with StayCozy.</p>
+          <button class="button">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Attractions Section -->
+<section class="attractions" id="attractions">
+  <div class="content">
+    <div class="title"><span>Explore Attractions in Thailand</span></div>
+
+    <!-- TEMPLE Attraction -->
+    <div class="attraction">
+      <img src="https://images.unsplash.com/photo-1678086600581-33bf35d4fd18?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Temple">
+      <div class="attraction-info">
+        <h2>Temple</h2>
+        <p>Explore the rich cultural heritage of Thailand by visiting its stunning temples.</p>
+      </div>
+    </div>
+
+    <!-- CITY Attraction -->
+    <div class="attraction">
+      <img src="https://images.unsplash.com/photo-1677296615107-f61553c92326?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="City">
+      <div class="attraction-info">
+        <h2>City</h2>
+        <p>Experience the vibrant energy of Thai cities, where modernity meets tradition.</p>
+      </div>
+    </div>
+
+    <!-- Night Market Attraction -->
+    <div class="attraction">
+      <img src="https://images.unsplash.com/photo-1644130153449-be672c1cbff3?q=80&w=1723&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Night Market">
+      <div class="attraction-info">
+        <h2>Night Market</h2>
+        <p>Indulge in the vibrant atmosphere of Thai night markets with diverse street food and shopping.</p>
+      </div>
+    </div>
+
+    <!-- Beach Attraction -->
+    <div class="attraction">
+      <img src="https://images.unsplash.com/photo-1519451241324-20b4ea2c4220?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Beach">
+      <div class="attraction-info">
+        <h2>Beach</h2>
+        <p>Relax on the beautiful beaches of Thailand and enjoy the sun, sea, and sand.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact Us Section -->
+  <section class="contact" id="contact">
+    <div class="content">
+      <div class="title"><span>Contact Us</span></div>
+      <div class="text">
+        <div class="topic">Have Questions or Special Requests?</div>
+        <p>Contact our team, and we'll be happy to assist you.</p>
+        <div class="button">
+          <h2>Contact Us</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  
+</body>
+
+</html>

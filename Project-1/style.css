@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a89866;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a4d687;
+}
+
+/* Navigation Styles */
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #ffffff; /* Fill color for the navigation background */
+}
+
+nav.sticky {
+  background: #a89866;
+  padding: 13px 0;
+}
+
+nav .navbar {
+  width: 90%;
+  margin: 0 auto; /* Center the navigation */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo Styles */
+nav .navbar .logo a {
+  font-family: 'Poppins', sans-serif; /* Changed font family */
+  font-weight: 500;
+  font-size: 35px;
+  color: #a89866;
+}
+
+nav.sticky .navbar .logo a {
+  color: #fff;
+}
+
+/* Menu Styles */
+nav .navbar .menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar .menu li {
+  margin: 0 15px;
+}
+
+.navbar .menu a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #0E2431;
+  padding: 6px 0;
+  transition: all 0.4s ease;
+}
+
+.navbar .menu a:hover {
+  color: #a89866;
+}
+
+/* StayCozy Section Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1449247709967-d4461a6a6103?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.text {
+  font-family: 'Poppins', sans-serif; 
+  text-align: center;
+  color: #0E2431;
+  padding: 20px;
+}
+
+.text-one {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.text-two {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.text-three {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* Search Box Styles */
+.search-box {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif; 
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button {
+  background-color: #a89866;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  display: inline-block; /* Ensure it behaves like an inline element */
+  text-decoration: none; /* Remove any default text decoration */
+}
+
+.button:hover {
+  background-color: #dfe8df;
+}
+
+/* Flights Section Styles */
+.flights {
+  position: relative;
+  height: 100vh;
+  color: #fff;
+  overflow: hidden;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.flight-info-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Attractions Section Styles */
+.attractions {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+}
+
+/* Add more styles for Attractions section as needed */
+
+/* Contact Us Section Styles */
+.contact .text {
+  font-family: 'Poppins', sans-serif; 
+}
+
+.contact {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+}
+
+.contact .text {
+  font-size: 20px;
+  font-weight: 60;
+  color: #0E2431;
+  margin-bottom: 20px;
+}
+
+.contact .form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact .form .form-group {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.contact .form .form-group:last-child {
+  margin-right: 0;
+}
+
+.contact .form label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #3d4447;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.contact .form input,
+.contact .form textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact .form textarea {
+  height: 120px;
+}
+
+.contact .form .submit-btn {
+  background-color: #0c440e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  display: inline-block; /* Ensure it behaves like an inline element */
+  text-decoration: none; /* Remove any default text decoration */
+}
+
+.contact .form .submit-btn:hover {
+  background-color: #dfe8df;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #0c440e;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .logo a {
+  font-family: 'Poppins', sans-serif; /* Changed font family */
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
+}
+
+.footer .social-icons {
+  margin-top: 20px;
+}
+
+.footer .social-icons a {
+  font-size: 18px;
+  color: #fff;
+  margin: 0 15px;
+  transition: all 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #a4d687;
+}
+
+/* Attractions Section Styles */
+.attractions {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+}
+
+.attractions .content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.attractions .title {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.attraction {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  height: 300px; /* Set a fixed height for the square box */
+}
+
+.attraction:hover {
+  border-color: #a89866;
+}
+
+.attraction img {
+  width: 100%;
+  height: 150px; /* Set a fixed height for the image */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.attraction-info h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.attraction-info p {
+  font-size: 18px;
+  color: #3d4447;
+}
